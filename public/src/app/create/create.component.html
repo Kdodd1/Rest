@@ -1,0 +1,21 @@
+<div class="AddRestaurant">
+  <form (submit)="create()" >
+  <div class="form-group">
+    <label for="exampleInputEmail1">Name of Restaurant: </label>
+    <input type="text" name="restaurant.name" [(ngModel)]="restaurant.name" class="form-control"  aria-describedby="emailHelp" placeholder="Restaurant Name">
+    <small *ngIf="errors.name" class="form-text text-muted">{{errors.name.message}}</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Cuisine  Style: </label>
+    <input type="text" name="restaurant.style" [(ngModel)]="restaurant.style" class="form-control" placeholder="Style">
+    <small *ngIf="errors.style" class="form-text text-muted">{{errors.style.message}}</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleTextarea">Description: </label>
+    <textarea name="restaurant.description" [(ngModel)]="restaurant.description" rows="8" cols="80"></textarea>
+    <small *ngIf="errors.style" class="form-text text-muted">{{errors.description.message}}</small>
+  </div>
+  <button type="submit" class="btn btn-primary">Add a Restaurant</button>
+  <a [routerLink]="['/']"><button class="btn btn-primary btn1">Canel</button></a>
+</form>
+</div>
