@@ -1,4 +1,4 @@
-console.log("inside of foodtrucks.js");
+console.log("inside of Rest.js");
 
 const mongoose = require("mongoose");
 const Restaurant = mongoose.model("Restaurant");

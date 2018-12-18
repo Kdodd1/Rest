@@ -2,7 +2,7 @@ const express = require("express"),
            bp = require("body-parser"),
           app = express(),
          path = require('path'),
-      db_name = "restaurants",
+      db_name = "restaurantz",
          port = 8000;
 
 app.use(bp.json());
